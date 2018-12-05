@@ -1,0 +1,109 @@
+.sidebar ~ .topbar, .sidebar ~ main {
+    margin-left: 260px;
+}
+
+.topbar {
+    padding: 0 18px;
+    height: 64px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 995;
+    -webkit-transition: margin-left 0.3s ease;
+    transition: margin-left 0.3s ease;
+    background-color: #fff;
+    -webkit-box-shadow: 4px 0 5px rgba(0,0,0,0.08);
+    box-shadow: 4px 0 5px rgba(0,0,0,0.08);
+}
+.topbar-left {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.topbar-right {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    flex-direction: row-reverse;
+}
+
+.sidebar-toggler, .topbar-menu-toggler {
+    font-size: 21px;
+    background: 0 0;
+    outline: none !important;
+}
+
+.topbar-btn {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 64px;
+    padding: 0 12px;
+    text-align: center;
+    color: rgba(77,82,89,0.7);
+    cursor: pointer;
+    min-width: 48px;
+    white-space: nowrap;
+    border: none;
+    border-top: 1px solid transparent;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    position: relative;
+    z-index: 991;
+}
+
+@media (min-width: 992px) {
+    .sidebar-expand-lg ~ .topbar .sidebar-toggler {
+        display: none;
+    }
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.topbar-divider, .topbar-divider-full {
+    border-left: 1px solid rgba(77,82,89,0.07);
+    height: 20px;
+    align-self: center;
+    margin: 0 12px;
+}
+.topbar-btns {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    flex-direction: row-reverse;
+}
+.dropdown, .dropleft, .dropright, .dropup {
+    position: relative;
+}
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #f5f6f7;
+    color: #8b95a5;
+    text-transform: uppercase;
+}
